@@ -9,7 +9,7 @@ docker image build -t docker-ffmpeg:v1 .
 docker run -i -t docker-ffmpeg:v1 /bin/bash
 ```
 
-也增加了最新的转场效果，增加到84个，但是实测时有的效果无法成功，成功的只有48个，可能是因为ffmpeg版本较老的缘故，如果用最新版本，gl-transition又无法直接通过dockerfile配置成功
+也增加了最新的转场效果，增加到84个，但是实测时有的效果无法成功，成功的只有60个左右，可能是因为ffmpeg版本较老的缘故，如果用最新版本，gl-transition又无法直接通过dockerfile配置成功
 
 
 让你在pc平台将多个视频合成为一个且在视频与视频之间添加酷炫的转场
