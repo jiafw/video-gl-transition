@@ -3,10 +3,11 @@
 注意事项：目前只支持同尺寸的视频合成
 
 由于配置gl-transitions不太容易，因此添加了dockerfile，可以使用docker，降低配置难度
-'''
+
+```base
 docker image build -t docker-ffmpeg:v1 .
 docker run -i -t docker-ffmpeg:v1 /bin/bash
-'''
+```base
 
 也增加了最新的转场效果，增加到84个，但是实测时有的效果无法成功
 
