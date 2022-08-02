@@ -72,7 +72,6 @@ RUN (cd Python-3.9.1; make -j)
 RUN (cd Python-3.9.1; make install)
 RUN ln -s /usr/local/bin/python3.9 /usr/bin/python
 
-RUN (nohup Xvfb :1 -screen 0 1920x1080x24 >/dev/null 2>&1 &) && export DISPLAY=:1
 
 # drop you into a shell to look around
 # modify as needed for actual use
