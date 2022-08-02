@@ -65,7 +65,7 @@ RUN (cd ffmpeg-gl-transition; xvfb-run -s '+iglx -screen 0 1920x1080x24' bash co
 # result would be in out.mp4 in that directory
 
 # install python
-RUN apt-get install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl libbz2-dev
+RUN apt-get -y install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev curl libbz2-dev
 RUN wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz && tar -xf Python-3.9.1.tgz
 RUN (cd Python-3.9.1; ./configure --enable-optimizations)
 RUN (cd Python-3.9.1; make -j)
